@@ -1,8 +1,17 @@
-import { createRouter, createWebHistory, Router } from "vue-router";
+import {
+  createRouter,
+  createWebHistory,
+  Router,
+  RouteRecordRaw
+} from "vue-router";
 
-import remaining from "./modules/remaining";
-
-const routes = [remaining];
+const routes: Array<RouteRecordRaw> = [
+  {
+    path: "/",
+    name: "Index",
+    component: () => import("../views/databoard.vue")
+  }
+];
 
 // 创建路由实例
 export const router: Router = createRouter({

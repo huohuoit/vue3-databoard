@@ -2,7 +2,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>Hello Huohuo</div>
+  <div>数据看板</div>
 </template>
 
 <style scoped></style>
